@@ -78,12 +78,20 @@ h5 {
 .header-titulo {
     background-color: #FFFFF6;
     padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-titulo h1 {
     font-size: 2.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.header-titulo img{
+    width: 170px;
+    height: 100px;
 }
 
 .barra {
@@ -687,5 +695,9 @@ input[type="tel"] {
         border: none;
     }
 
+    .header-titulo img{
+        width: 113px;
+        height: 66px;
+    }
 
 }
