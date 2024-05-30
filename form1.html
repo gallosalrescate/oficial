@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form1.css">
+</head>
+
+<body>
+
+    <main class="estilo-form">
+        <form action="" id="solicitud" class="centrar-contenido">
+            <fieldset>
+                <legend>Formulario de Solicitud</legend>
+
+                <!--Datos Personales-->
+                <div>
+                    <div>
+                        <label for="nombre"><b>Nombre(s):</b> </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="apellido"><b>Apellidos:</b> </label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                    </div>
+
+                    <div>
+                        <label for="edad"><b>Edad: </b></label>
+                        <input type="number" id="edad" name="edad" placeholder="Tu edad">
+                    </div>
+
+
+                    <div>
+                        <label for="sexo"><b>Sexo:</b></label>
+                        <div class="radio-group">
+                            <label for="masculino">
+                                <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino
+                            </label>
+                            <label for="femenino">
+                                <input type="radio" id="femenino" name="sexo" value="femenino"> Femenino
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <!--Datos contacto-->
+                    <div>
+                        <div>
+                            <label for="email"><b>E-mail</b></label>
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                        </div>
+
+                        <div>
+                            <label for="tel"><b>Telefono</b></label>
+                            <input type="tel" id="tel" name="tel" placeholder="Telefono" required>
+                        </div>
+                    </div>
+                </div> <!--Datos de contacto-->
+
+                <!--Cuestionario-->
+                <div>
+                    <label for="mensaje">Describe el problema presente en tu comunidad</label><br>
+                    <textarea id="mensaje" name="mensaje" cols=20" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+
+                <div>
+                    <p><b>Ubicación del Incidente</b></p>
+
+                    <label for="calle">Dirección</label>
+                    <input type="text" id="calle" name="calle" placeholder="Calle" required>
+                    <label for="Numero">Numero</label>
+                    <input type="text" id="numero" name="numero" placeholder="#123" required>
+                    <label for="codigo_postal">Código postal</label>
+                    <input type="text" id="codigo_postal" name="codigo_postal" placeholder="12345" required>
+                </div>
+
+                <div>
+                    <p><b>Seleccione el tipo de problema</b></p>
+                    <div class="checkbox-group">
+                        <div class="label-style">
+                            <label for="agua"><input type="checkbox" id="agua" name="agua" value="Falta de Agua">Falta
+                                de
+                                agua</label>
+                            <label for="luz"><input type="checkbox" id="luz" name="luz" value="Falta de luz">Falta de
+                                luz</label>
+                            <label for="mbiental"><input type="checkbox" id="ambiental" name="ambiental"
+                                    value="Problema Ambiental">Problema Ambiental</label>
+                            <label for="otro"><input type="checkbox" id="otro" name="otro" value="Otro">Otro</label>
+                        </div>
+
+                        <textarea id="especificar" name="especificar" cols="20" rows="5"
+                            placeholder="Especificar"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <p><b>Fecha y hora aproximada del incidente</b></p>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                </div>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById('solicitud').addEventListener('submit', function (event) {
+            // Detener el envío del formulario por defecto
+            event.preventDefault();
+            // Redirigir al usuario a check.html
+            window.location.href = './check.html';
+        });
+    </script>
+
+</body>
+
+</html>
