@@ -15,6 +15,25 @@ body {
     box-sizing: inherit;
 }
 
+/*
+    texto
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Usar Open Sans para los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /*Globales*/
 .centrar-texto {
     text-align: center;
@@ -89,7 +108,7 @@ h5 {
     padding-bottom: 2rem;
 }
 
-.header-titulo img{
+.header-titulo img {
     width: 170px;
     height: 100px;
 }
@@ -287,49 +306,105 @@ h5 {
 
 
 /*Formulario*/
-
-.formulario {
-    padding-top: 3rem;
-    margin: 20px;
+.fondo-contacto {
+    background-color: #f7f7f7;
 }
 
-.contenedor-aportacion {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #202020;
-    padding: 15px;
-    color: #fff;
-    border-radius: 5px;
+.img-contacto {
+    flex: 1;
+    margin: 5% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    margin: 5%;
+}
+
+.texto-contacto {
+    text-align: center;
+}
+
+.texto-contacto p {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.contenido-contacto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.legent-titulo {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
 }
 
 .forms-decoration {
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #666;
+}
+
+
+.forms-decoration input,
+.forms-decoration textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-family: inherit;
+}
+
+.forms-decoration b {
+    font-size: 1.5rem;
+}
+
+
+.forms-decoration input:focus,
+.forms-decoration textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+.forms-decoration input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.forms-decoration input[type="submit"]:hover {
+    background-color: #004a99;
 }
 
 
 input[type="text"] {
     margin: 15px 0px;
     padding: 20px;
-    border: none;
+
 }
 
 input[type="email"] {
     margin: 15px 0px;
     padding: 20px;
-    border: none;
+
 }
 
 input[type="tel"] {
     margin: 15px 0px;
     padding: 20px;
-    border: none;
 }
 
-.legent-titulo b {
-    font-size: 23px;
-}
+
 
 .boton-formulario {
     padding: 10px 30px;
@@ -341,8 +416,19 @@ input[type="tel"] {
     text-align: center;
     color: #000;
     border: none;
+    border-radius: 4px;
 }
 
+
+
+.contenedor-aportacion {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    color: #000;
+    border-radius: 5px;
+}
 
 /*Footer*/
 
@@ -453,6 +539,12 @@ input[type="tel"] {
     text-align: center;
 }
 
+.formulario input[type="submit"]:hover {
+    background-color: #004a99;
+    color: white;
+    cursor: pointer;
+}
+
 .boton-negro {
     background-color: #202020;
 }
@@ -535,6 +627,22 @@ input[type="tel"] {
     .contenido-aportacion p {
         font-size: 1.4rem;
     }
+
+    .legent-titulo {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .forms-decoration input,
+    .forms-decoration textarea,
+    .forms-decoration b {
+
+        font-size: 1.3rem;
+    }
+
+    .texto-contacto p {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -612,6 +720,10 @@ input[type="tel"] {
     .contenedor-solicitud {
         flex-direction: column;
     }
+
+    .texto-contacto p {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -680,24 +792,33 @@ input[type="tel"] {
     input[type="text"] {
         margin: 10px 0px;
         padding: 5px;
-        border: none;
+
     }
 
     input[type="email"] {
         margin: 10px 0px;
         padding: 5px;
-        border: none;
     }
 
     input[type="tel"] {
         margin: 10px 0px;
         padding: 5px;
-        border: none;
     }
 
-    .header-titulo img{
+    .header-titulo img {
         width: 113px;
         height: 66px;
+    }
+
+    .forms-decoration input,
+    .forms-decoration textarea,
+    .forms-decoration b {
+
+        font-size: 1rem;
+    }
+
+    .texto-contacto p {
+        font-size: 1rem;
     }
 
 }

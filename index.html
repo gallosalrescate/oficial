@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallos al Rescate</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -158,60 +162,13 @@
         </div>
     </section>
 
-    <section class="formulario">
-        <form id="formulario" class="contenedor-aportacion">
-            <fieldset>
-                <legend class="centrar-texto legent-titulo"><b>Información Personal</b></legend><br>
-    
-                <div class="forms-decoration">
-                    <label for="nombre"><b>Nombre: </b></label>
-                    <input type="text" id="nombre" placeholder="Tu Nombre" required>
-                </div>
-    
-                <div class="forms-decoration">
-                    <label for="apellido"><b>Apellido: </b></label>
-                    <input type="text" id="apellido" placeholder="Tu Apellido" required>
-                </div>
-    
-    
-                <div class="forms-decoration">
-                    <label for="email"><b>E-mail: </b></label>
-                    <input type="email" id="email" placeholder="Tu Correo Electronico" required>
-                </div>
-    
-                <div class="forms-decoration">
-                    <label for="telefono"><b>Teléfono: </b></label>
-                    <input type="tel" placeholder="Tu Teléfono" required>
-                </div>
-    
-    
-                <div class="forms-decoration">
-                    <label for="mensaje"><b>Mensaje: </b></label><br>
-                    <textarea id="mensaje" cols=20" rows="5"></textarea>
-                </div>
-    
-                <input type="submit" class="boton-formulario" value="Enviar">
-            </fieldset>
-        </form>
-    </section>
-    
-    <script>
-        document.getElementById('formulario').addEventListener('submit', function(event) {
-            // Detener el envío del formulario por defecto
-            event.preventDefault();
-            
-            // Redirigir al usuario a check.html
-            window.location.href = './check.html';
-        });
-    </script>
-    
-
     <footer class="footer">
         <h3>Gallos al Rescate</h3>
 
         <ul class="social-icons">
             <li>
-                <a href="https://www.facebook.com/share/yTXwMEiWVPsgfeYp/?mibextid=qi2Omg" target="_blank" class="facebook">
+                <a href="https://www.facebook.com/share/yTXwMEiWVPsgfeYp/?mibextid=qi2Omg" target="_blank"
+                    class="facebook">
                     <img src="./Imagenes/icons/facebook.png" alt="Icono facebook">
                 </a>
 
@@ -236,7 +193,7 @@
         </div>
     </footer>
 
-    
+
 </body>
 
 </html>

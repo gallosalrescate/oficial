@@ -4,8 +4,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+    height: 100vh;
+    /* Asegura que el body ocupe toda la altura de la pantalla */
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Usar Open Sans para los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 .container {
     height: 100%;
@@ -17,10 +33,11 @@ body {
     align-items: center;
     margin: 30px;
     box-sizing: border-box;
-    padding: 20px; /* Añade padding para dar espacio dentro del contenedor */
+    padding: 20px;
+    /* Añade padding para dar espacio dentro del contenedor */
 }
 
-.regresar{
+.regresar {
     padding-bottom: 50px;
 }
 
@@ -36,13 +53,14 @@ body {
 
 .regresar a:hover {
     color: #000;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 .titulo-form h1 {
     color: #fff;
     font-size: 50px;
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center;
+    /* Centra el texto horizontalmente */
 }
 
 .imagen img {
@@ -51,20 +69,18 @@ body {
 
 
 @media (max-width: 450px) {
-    .regresar a
-    {
+    .regresar a {
         font-size: 10px;
         margin: 15px;
         padding: 15px 30px;
-        
+
     }
 
     .imagen img {
         height: 150px;
     }
 
-    .titulo-form h1 
-    {
+    .titulo-form h1 {
         font-size: 25px;
     }
 }
