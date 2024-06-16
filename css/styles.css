@@ -97,6 +97,7 @@ h5 {
 .header-titulo {
     background-color: #FFFFF6;
     padding-left: 2rem;
+    padding-right: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,8 +110,9 @@ h5 {
 }
 
 .header-titulo img {
-    width: 170px;
-    height: 100px;
+    width: 70px;
+    height: 110px;
+    margin: 1rem;
 }
 
 .barra {
@@ -311,15 +313,25 @@ h5 {
 }
 
 .img-contacto {
-    flex: 1;
-    margin: 5% 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    /* El contenedor ocupa todo el ancho disponible */
+    max-width: 250px;
+    /* Limita el tamaño máximo del contenedor */
+    margin: 2rem auto 0 auto;
+    /* Centra el contenedor */
+}
+
+.img-contacto img {
+    width: 100%;
+    /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Elimina espacios blancos debajo de la imagen */
 }
 
 .formulario {
-    margin: 5%;
+    margin: 3%;
 }
 
 .texto-contacto {
@@ -328,7 +340,7 @@ h5 {
 
 .texto-contacto p {
     font-size: 2rem;
-    margin: 1rem;
+    margin: 2rem 3rem;
 }
 
 .contenido-contacto {
@@ -724,6 +736,26 @@ input[type="tel"] {
     .texto-contacto p {
         font-size: 1.3rem;
     }
+
+    .texto-contacto h1 {
+        font-size: 2rem;
+    }
+
+    .header-titulo img {
+        width: 46px;
+        height: 73px;
+        margin: 1rem;
+    }
+
+    .img-contacto {
+        width: 100%;
+        /* El contenedor ocupa todo el ancho disponible */
+        max-width: 200px;
+        /* Limita el tamaño máximo del contenedor */
+        margin: 2rem auto 0 auto;
+        /* Centra el contenedor */
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -806,8 +838,9 @@ input[type="tel"] {
     }
 
     .header-titulo img {
-        width: 113px;
-        height: 66px;
+        width: 35px;
+        height: 55px;
+        margin: 1rem;
     }
 
     .forms-decoration input,
@@ -819,6 +852,15 @@ input[type="tel"] {
 
     .texto-contacto p {
         font-size: 1rem;
+    }
+
+    .img-contacto {
+        width: 100%;
+        /* El contenedor ocupa todo el ancho disponible */
+        max-width: 100px;
+        /* Limita el tamaño máximo del contenedor */
+        margin: 2rem auto 0 auto;
+        /* Centra el contenedor */
     }
 
 }
